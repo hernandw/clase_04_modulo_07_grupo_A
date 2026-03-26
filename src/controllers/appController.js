@@ -1,12 +1,12 @@
 
 
-const home = (req, res) => {
+/* const home = (req, res) => {
   res.render("home", {
     pageTitle: "Inicio",
     
   
   });
-};
+}; */
 
 const about = (req, res) => {
   res.render("about", {
@@ -20,4 +20,4 @@ const contact = (req, res) => {
   });
 };
 
-export { home, about, contact };
+export {  about, contact };

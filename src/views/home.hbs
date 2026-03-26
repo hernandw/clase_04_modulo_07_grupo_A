@@ -1,6 +1,6 @@
 <h1>Registro de Bootcamp</h1>
 
-<form action="/add-student" method="POST">
+<form action="/add-user" method="POST">
     <input type="text" name="name" placeholder="Nombre del estudiante" required>
     <input type="email" name="email" placeholder="Correo electrónico" required>
     <button type="submit">Registrar</button>
@@ -8,7 +8,7 @@
 
 <h2>Estudiantes Inscritos:</h2>
 <ul>
-    {{#each students}}
+    {{#each users}}
         <li style="margin-bottom: 10px;">
             <strong>{{this.name}}</strong>  {{this.email}}
             

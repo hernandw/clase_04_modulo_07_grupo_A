@@ -1,14 +1,17 @@
 import express from 'express'
-import { home, about, contact} from '../controllers/appController.js'
+import {  about, contact} from '../controllers/appController.js'
+import {getAllUsers, createUser} from '../controllers/userController.js'
 
 
 const router = express.Router()
 
-router.get('/', home)
+ router.get('/', getAllUsers) 
 
 router.get('/about', about)
 
 router.get('/contact', contact)
+
+router.post('/add-user',  createUser)
 
 
 

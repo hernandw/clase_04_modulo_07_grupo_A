@@ -3,7 +3,7 @@ import userRouter from "./routes/usersRoutes.js";
 import exphbs from "express-handlebars";
 import path from "path";
 import db from "./config/db.js";
-import { connect } from "http2";
+
 
 const __dirname = path.resolve();
 
